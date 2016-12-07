@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apuntes HTML</title>
+	<meta charset="utf-8" />
+	<!-- css externo -->
+	<link rel="stylesheet" href="estilos.css" />
+	<!-- css interno -->	
+	<style>
+		table{border-collapse: collapse;}
+		/*table{border:1px solid red;	}*/
+		tr{border:1px solid blue}
+		th, td{border:1px solid green}
+		h1{border-bottom:1px solid black}
+		footer{border-top:1px solid black}
+	</style>
+</head>
+<body>
+<head>
+	<h1>Apuntes HTML</h1>
+	<nav><a href="index.html">HTML</a> | <a href="#">CSS</a></nav>
+</head>
+<main>
+	<h2>Etiquetas básicas</h2>
+	<p>Para marcar los encabezados usaremos <code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; o &lt;h6&gt;</code></p>
+	<p>Para marcar un párrafo usaremos <code>&lt;p&gt;</code></p>
+	<p>Para organizar el documento podemos usar <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> y <code>&lt;footer&gt;</code>. También tenemos las etiquetas <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;aside&gt;</code></p>
+	<p>Para crear una barra de navegación usaremos <code>&lt;nav&gt;</code> y enlaces</p>
+
+	<h2>Listas</h2>
+	<ul>
+		<li>Para listas ordenadas usaremos <code>&lt;ol&gt;</code></li>
+		<li>Para listas no ordenadas usaremos <code>&lt;ul&gt;</code></li>
+		<li>Para marcar cada ítem de la lista usaremos <code>&lt;li&gt;</code></li>
+	</ul>
+	<h2>Tablas</h2>
+	<p>Este es un ejemplo de tabla (ver el código fuente para ver las etiquetas que se usan):</p>
+	<table summary="a summary of recent major volcanic eruptions in the Pacific Northwest">
+		<caption>Recent Major Volcanic Eruptions in the Pacific Northwest</caption>
+		<thead>
+		    <tr>
+		        <th scope="col">Volcano Name</th>
+		        <th scope="col">Location</th>
+		        <th scope="col">Last Major Eruption</th>
+		        <th scope="col">Type of Eruption</th>
+		    </tr>
+		</thead>
+		<tfoot>
+		    <tr>
+		        <td colspan="4">Compiled in 2008 by Ms Jen</td>
+		    </tr>
+		</tfoot>  
+		<tbody>
+		    <tr>
+		        <th scope="row">Mt. Lassen</th>
+		        <td>California</td>
+		        <td>1914-17</td>
+		        <td>Explosive Eruption</td>
+		    </tr>
+		    <tr>
+		        <th scope="row">Mt. Hood</th>
+		        <td>Oregon</td>
+		        <td>1790s</td>
+		        <td>Pyroclastic flows and Mudflows</td>
+		    </tr>
+		    <tr>
+		        <th scope="row">Mt. St. Helens</th>
+		        <td>Washington</td>
+		        <td>1980</td>
+		        <td>Explosive Eruption</td>
+		    </tr>
+		</tbody>
+	</table>
+	<h2>Enlaces</h2>
+	<p>Este <a href="#inicio">enlace</a> lleva al principio del documento (porque hemos puesto un <code>&lt;a name="inicio"&gt; en la cabecera)</code>
+</main>
+<footer>
+	<p>1GS DAW</p>
+</footer>
+</body>
+</html>
