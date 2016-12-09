@@ -16,23 +16,26 @@
 	</style>
 </head>
 <body>
-<head>
-	<h1><a name="inicio">Apuntes HTML</a></h1>
-	<nav><a href="index.html">HTML</a> | <a href="#">CSS</a></nav>
-</head>
+<header>
+	<h1 id="inicio">Apuntes HTML</h1>
+	<nav><a href="index.html">HTML</a> <span class="barra">|</span> <a href="#">CSS</a></nav>
+</header>
 <main>
-	<h2>Etiquetas básicas</h2>
-	<p>Para marcar los encabezados usaremos <code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; o &lt;h6&gt;</code></p>
-	<p>Para marcar un párrafo usaremos <code>&lt;p&gt;</code></p>
-	<p>Para organizar el documento podemos usar <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> y <code>&lt;footer&gt;</code>. También tenemos las etiquetas <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;aside&gt;</code></p>
-	<p>Para crear una barra de navegación usaremos <code>&lt;nav&gt;</code> y enlaces</p>
-
-	<h2>Listas</h2>
-	<ul>
-		<li>Para listas ordenadas usaremos <code>&lt;ol&gt;</code></li>
-		<li>Para listas no ordenadas usaremos <code>&lt;ul&gt;</code></li>
-		<li>Para marcar cada ítem de la lista usaremos <code>&lt;li&gt;</code></li>
-	</ul>
+	<div id="basico">
+		<h2>Etiquetas básicas</h2>
+		<p>Para marcar los encabezados usaremos <code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; o &lt;h6&gt;</code></p>
+		<p>Para marcar un párrafo usaremos <code>&lt;p&gt;</code></p>
+		<p>Para organizar el documento podemos usar <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> y <code>&lt;footer&gt;</code>. También tenemos las etiquetas <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;aside&gt;</code></p>
+		<p>Para crear una barra de navegación usaremos <code>&lt;nav&gt;</code> y enlaces</p>
+	</div>
+	<div>
+		<h2>Listas</h2>
+		<ul>
+			<li>Para listas <span class="importante unico">ordenadas</span> usaremos <code>&lt;ol&gt;</code></li>
+			<li>Para listas <span class="importante">no ordenadas</span> usaremos <code>&lt;ul&gt;</code></li>
+			<li>Para marcar cada ítem de la lista usaremos <code>&lt;li&gt;</code></li>
+		</ul>
+	</div>
 	<h2>Tablas</h2>
 	<p>Este es un ejemplo de tabla (ver el código fuente para ver las etiquetas que se usan):</p>
 	<table summary="a summary of recent major volcanic eruptions in the Pacific Northwest">
@@ -74,7 +77,10 @@
 	<h2>Enlaces</h2>
 	<p>Este <a href="#inicio">enlace</a> lleva al principio del documento (porque hemos puesto un <code>&lt;a name="inicio"&gt; en la cabecera)</code>
 	<h2>Imagenes</h2>
-	<img src="gato.jpeg" alt="Un gato jugando con un ovillo" width="200px"/>
+	<figure>
+		<img src="gato.jpeg" alt="Un gato jugando con un ovillo" title="Gato jugando" width="200px"/>
+		<figcaption>Gatito jugando</figcaption>
+	</figure>
 </main>
 <footer>
 	<p>1GS DAW</p>

@@ -1,8 +1,13 @@
+span.barra{display:none}
 /* estilos de los enlaces */
-a{text-decoration:none;font-size:1.5em}
+a{
+	text-decoration:none;
+	font-size:1.5em;
+	border-left:10px solid gray}
 a:link{color:green}
 a:visited{color:grey}
-a:hover, a:active{color:white;background-color:green}
+a:hover{color:white;background-color:green}
+a:active{color:white;background-color:red}
 
 /* background-repeat: repeat, no-repeat, repeat-x, repeat-y */ 
 
@@ -13,3 +18,35 @@ table{background-color:#bbbb00;
 			background-repeat:no-repeat;
 			background-position:center}
 */
+img{border:1px solid red}
+figure{border:1px solid blue;text-align:center;width:400px}
+div#basico{
+	/*border:1px solid green;*/
+	border-top:5px solid red;
+	border-bottom:5px solid green;
+	width:404px;
+	margin:30px auto;
+	padding:10px
+}
+span.importante{border:1px solid green;font-size:2em}
+span.unico{border:1px solid red}
+div#basico h2{margin:0;padding:0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
